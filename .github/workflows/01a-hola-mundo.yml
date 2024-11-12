@@ -1,0 +1,12 @@
+# This is a basic workflow that is manually triggered
+
+name: 01a-hola-mundo
+on:
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hola mundo
+      run: echo "Hola mundo"
